@@ -1,0 +1,247 @@
+/* style.css for Riddhi's Aesthetic Homepage */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ffe3ec, #fce4ff);
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    position: relative;
+}
+
+header {
+    background: linear-gradient(to right, #fca5f1, #b5ffff);
+    padding: 1.5rem 2rem;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 0.7rem;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.hero-text {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #d94bff;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+}
+
+.hero-btn {
+    display: inline-block;
+    background: #ffcbf2;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    background: #ff9de2;
+}
+
+.hero-img {
+    flex: 1;
+    max-width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.feature-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card h3 {
+    color: #b86adb;
+}
+
+.typing {
+    font-size: 1.5rem;
+    width: fit-content;
+    border-right: 2px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(30, end) infinite alternate;
+    margin: 2rem auto;
+    text-align: center;
+    max-width: 100%;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+.bg-decor {
+    position: absolute;
+    width: 60px;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.top-left {
+    top: 10px;
+    left: 10px;
+}
+
+.bottom-right {
+    bottom: 10px;
+    right: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+main {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 1.5rem;
+}
+
+ul li a {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 12px;
+    text-decoration: none;
+    background: #f7f1ff;
+    color: #d94bff;
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    transform: scale(1.05);
+    background: #ffe4f7;
+}
+
+.dark-mode {
+    background: linear-gradient(to right, #121212, #1e1e1e);
+    color: #f0f0f0;
+}
+
+.dark-mode main {
+    background-color: #222;
+}
+
+.dark-mode header {
+    background: #2e2e2e;
+}
+
+.dark-mode nav a {
+    color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    ul li a {
+        width: 100%;
+        text-align: center;
+    }
+
+    #darkModeBtn {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.gallery-container img {
+    width: 250px;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+section button {
+    font-size: 2rem;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #ffcbf2;
+    transition: 0.2s;
+}
+
+section button:hover {
+    background-color: #ffc8dd; }

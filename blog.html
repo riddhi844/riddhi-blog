@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Blog | Riddhi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #fff1f8, #f3eaff);
+            padding: 20px;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #fca5f1, #b5ffff);
+            padding: 1.5rem;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+        }
+
+        .blog-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .blog-card {
+            background: #ffffff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+        }
+
+        .blog-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        .blog-content {
+            padding: 1rem;
+        }
+
+        .blog-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #d94bff;
+        }
+
+        .blog-meta {
+            font-size: 0.8rem;
+            color: #777;
+            margin-bottom: 0.8rem;
+        }
+
+        .blog-desc {
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>📚 My Lovely Blog Posts</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="moodboard.html">Moodboard</a>
+            <a href="blog.html">Blog</a>
+        </nav>
+    </header>
+
+    <section class="blog-container">
+        <!-- Blog Post 1 -->
+        <div class="blog-card">
+            <img src="images/blog1.jpg" class="blog-img" alt="Post 1">
+            <div class="blog-content">
+                <div class="blog-title">My First Coding Journey 💻</div>
+                <div class="blog-meta">📅 June 2025 | #coding #beginner</div>
+                <p class="blog-desc">How I started learning HTML/CSS and created my first personal website. Tips,
+                    challenges, and wins inside!</p>
+            </div>
+        </div>
+
+        <!-- Blog Post 2 -->
+        <div class="blog-card">
+            <img src="images/blog2.jpg" class="blog-img" alt="Post 2">
+            <div class="blog-content">
+                <div class="blog-title">Things That Make Me Happy 😊</div>
+                <div class="blog-meta">📅 May 2025 | #life #selfcare</div>
+                <p class="blog-desc">Little joys in life like music, journaling, rainy days, and BTS 💜 Here's a cozy
+                    blog to make your day better.</p>
+            </div>
+        </div>
+
+        <!-- Blog Post 3 -->
+        <div class="blog-card">
+            <img src="images/blog3.jpg" class="blog-img" alt="Post 3">
+            <div class="blog-content">
+                <div class="blog-title">Aesthetic Wallpapers Collection 🎨</div>
+                <div class="blog-meta">📅 April 2025 | #aesthetic #gallery</div>
+                <p class="blog-desc">A collection of my favorite wallpapers and how I create my own moodboard themes.
+                    Download links included!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Riddhi Jangid | Written with 💖</p>
+    </footer>
+</body>
+
+</html>
